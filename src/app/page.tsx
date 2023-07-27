@@ -10,17 +10,7 @@ import { Grid } from "@/components/general";
     */
 }
 
-export default async function Home() {
-  const home = await fetch(
-    `${process.env.PAYLOAD_SERVER_URL}/api/pages?where[slug][equals]=home`
-  )
-    .then((res) => res.json())
-    .then((res) => res?.docs?.[0]);
-
-  console.log(home);
-
-  const metadata = home?.title || {};
-
+export default function Home() {
   return (
     <>
       <HomeHero />
