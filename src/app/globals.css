@@ -16,12 +16,36 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.open-sans {
+  font-family: var(--font-open-sans);
 }
+
+body {
+  color: black;
+  background: white
+}
+
+h1, .h1 {
+  @apply text-5xl font-bold
+}
+
+h2, .h2 {
+  @apply text-4xl font-bold
+}
+
+h3, .h3 {
+  @apply text-3xl font-bold
+}
+
+h4, .h4 {
+  @apply text-2xl
+}
+
+h5, .h5 {
+  @apply text-xl
+}
+
+.md-container {
+  @apply mx-auto max-w-full w-full md:w-[980px]
+}
+
