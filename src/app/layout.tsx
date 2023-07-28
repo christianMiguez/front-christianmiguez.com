@@ -1,5 +1,5 @@
 import { Header, Footer } from "@/components/layout/";
-import "./globals.css";
+import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter, Open_Sans } from "next/font/google";
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${openSans.className}`}>
-        {/* <Header /> */}
+        <Header />
         {children}
         {/* <Footer /> */}
       </body>

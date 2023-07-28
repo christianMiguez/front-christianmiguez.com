@@ -9,6 +9,7 @@
              -- Text headings
     */
 }
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 import styles from "./HomeHero.module.scss";
@@ -16,27 +17,42 @@ import styles from "./HomeHero.module.scss";
 export const HomeHero = () => {
   return (
     <div
-      className={`${styles.hero} w-full bg-no-repeat bg-cover bg-center overflow-hidden`}
+      className={`${styles.hero} w-full bg-no-repeat bg-cover bg-center overflow-hidden absolute `}
     >
       <div className="md-container ">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="relative min-h-[600px]">
+        <div className="md:grid md:grid-cols-2 gap-4">
+          <div className="relative min-h-[600px] hidden md:block">
             <HomeShape />
             <HomeLines />
             <HomeMe />
           </div>
-          <div className="pt-52 text-white open-sans">
-            <span className="text-4xl font-thin">Hello👋, I&apos;m Chris</span>
-            <h2 className="h1 mb-24">
-              Freelance Web
+          <motion.div
+            className="pt-24 pb-14 md:pt-52 text-white open-sans opacity-0 text-center md:text-left"
+            animate={{
+              opacity: 1,
+              transitionDuration: "5s",
+            }}
+          >
+            <span className="thin-style block mb-6">
+              Hello👋, I&apos;m Chris
+            </span>
+            <div className="md:hidden">
+              <Image
+                src="/assets/images/meRemastered.jpg"
+                alt="Christian Miguez"
+                width={150}
+                height={150}
+                className="rounded-full mx-auto mb-6"
+              />
+            </div>
+            <h2 className="h1 mb-6 md:mb-24">
+              Freelance
               <br />
-              Developer
+              Web Developer
             </h2>
 
-            <span className="text-4xl font-thin">
-              Let&apos;s do business together!
-            </span>
-          </div>
+            <span className="thin-style">Let&apos;s do business together!</span>
+          </motion.div>
         </div>
       </div>
     </div>
@@ -143,8 +159,8 @@ const HomeMe = () => {
       className={`${styles.me} w-[400px] h-[520px] absolute bottom-[-500px]`}
       animate={{
         bottom: 0,
-        transitionDuration: "0.3s",
       }}
+      transition={{ ease: "linear", duration: 0.5 }}
     />
   );
 };
