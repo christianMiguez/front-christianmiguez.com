@@ -17,7 +17,7 @@ import styles from "./HomeHero.module.scss";
 export const HomeHero = () => {
   return (
     <div
-      className={`${styles.hero} w-full bg-no-repeat bg-cover bg-center overflow-hidden absolute `}
+      className={`${styles.hero} w-full bg-no-repeat bg-cover bg-center overflow-hidden`}
     >
       <div className="md-container ">
         <div className="md:grid md:grid-cols-2 gap-4">
@@ -71,7 +71,7 @@ const HomeShape = () => {
       className="absolute bottom-[-740px] w-[600px] left-[485px]"
       animate={{
         bottom: "-140px",
-        left: "-85px",
+        left: "-55px",
         transitionDuration: "0.6s",
       }}
     >
@@ -102,8 +102,8 @@ const HomeLines = () => {
       xlinkHref="http://www.w3.org/1999/xlink"
       className="w-[75px] absolute bottom-[-600px] left-[150px]"
       animate={{
-        bottom: "300px",
-        left: "0",
+        bottom: "290px",
+        left: "25",
         transitionDuration: "0.5s",
       }}
     >
@@ -156,7 +156,7 @@ const HomeLines = () => {
 const HomeMe = () => {
   return (
     <motion.div
-      className={`${styles.me} w-[400px] h-[520px] absolute bottom-[-500px]`}
+      className={`${styles.me} w-[400px] h-[520px] absolute bottom-[-500px] left-4`}
       animate={{
         bottom: 0,
       }}

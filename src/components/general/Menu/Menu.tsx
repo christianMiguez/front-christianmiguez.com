@@ -35,14 +35,10 @@ const Menu = () => {
         ref={menuRef}
         onClick={handleBackdropClick}
       >
-        <li>
-          <Link href="/" className="p-2 mb-1 block">
-            Home
-          </Link>
-        </li>
+        <li></li>
         <li>
           <Link href="/about" className="p-2 mb-1 block">
-            About me
+            About
           </Link>
         </li>
         <li>
