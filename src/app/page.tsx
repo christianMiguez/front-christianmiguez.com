@@ -1,7 +1,7 @@
 import { GetInTouch, HomeHero, Services } from "@/components/features";
 import { Grid } from "@/components/general";
 
-export async function getPosts() {
+async function getPosts() {
   const res = await fetch(
     `https://admin-christianmiguez-com.onrender.com/api/posts?limit=4`
   ).then((res) => res.json());
