@@ -21,10 +21,12 @@ export const Services = () => {
 
   return (
     <div className="my-12">
-      <h3 className="text-center text-blue-middle">Let&apos;s Rock!</h3>
+      <h3 className="text-center text-blue-middle font-normal">
+        Unlock your imagination
+      </h3>
       <p className="text-center">
-        Unlock your imagination, and I&apos;ll turn it into reality! Let&apos;s
-        explore what I can create for you.
+        ...and I&apos;ll turn it into reality! Let&apos;s explore what I can
+        bring you.
       </p>
       {data.map((item, index) => {
         return (

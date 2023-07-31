@@ -1,5 +1,6 @@
 import { GetInTouch, HomeHero, Services } from "@/components/features";
 import { Grid } from "@/components/general";
+import { extractImageString } from "@/utils/extract-file-name";
 
 async function getPosts() {
   const res = await fetch(
@@ -8,14 +9,13 @@ async function getPosts() {
 
   const items = res.docs.map((doc: any) => ({
     image: doc.hero.media
-      ? doc.hero.media.url
+      ? `${process.env.NEXT_PUBLIC_SERVER_URL}/assets/images/` +
+        extractImageString(doc.hero.media.url)
       : `${process.env.NEXT_PUBLIC_SERVER_URL}/assets/images/images1web.webp`,
     title: doc.title,
     text: doc.hero.richText[0].children[0].text,
     href: doc.slug,
   }));
-
-  console.log(items);
 
   return items;
 }
@@ -28,7 +28,11 @@ export default async function Home() {
       <HomeHero />
       <Services />
 
-      <Grid items={items} />
+      <section className="p-8 bg-blue-dark text-white">
+        <div className="container mx-auto">
+          <Grid items={items} />
+        </div>
+      </section>
       <GetInTouch />
     </>
   );

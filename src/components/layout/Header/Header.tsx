@@ -25,7 +25,7 @@ export const Header = () => {
     >
       <div className="md-container">
         <div className="flex items-center justify-between">
-          <Logo variant="white" width={130} height={29} />
+          <Logo variant="white" width={150} height={44} />
           <nav className="flex items-center gap-6">
             <Menu />
 
