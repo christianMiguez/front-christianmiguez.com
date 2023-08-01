@@ -1,5 +1,28 @@
+import { GetInTouch } from "@/components/features";
+import { ImageAndTextRow, ImageAndTextRowProps } from "@/components/general";
+import { getPosts } from "@/utils/get-posts";
+
+export const metadata = {
+  title: "Christian Miguez:: Blog",
+  description:
+    "I just write things and stuff to share my knowledge and help people .",
+};
+
 export default async function Blog() {
+  const items = await getPosts(4);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="py-20">
+      {items.map((item: ImageAndTextRowProps) => (
+        <ImageAndTextRow
+          key={item.title}
+          title={item.title}
+          text={item.text}
+          image={item.image}
+          href={`/blog/${item.href}`}
+          inverse={true}
+        />
+      ))}
+      <GetInTouch />
+    </main>
   );
 }

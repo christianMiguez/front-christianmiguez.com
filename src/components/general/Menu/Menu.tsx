@@ -4,7 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
-const Menu = () => {
+type MenuProps = {
+  variant: "black" | "white";
+};
+const Menu = ({ variant }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const variants = {
     open: { opacity: 1, x: 0 },
@@ -24,10 +27,15 @@ const Menu = () => {
     }
   };
 
+  const colorPalette = {
+    black: "text-black",
+    white: "text-white",
+  };
+
   return (
     <>
       <motion.ul
-        className="chr-main-menu list-none block absolute w-64 left-0 top-0 p-6 text-2xl bg-black h-screen lg:h-auto lg:text-base lg:bg-transparent lg:!top-auto lg:!left-auto lg:!w-auto !lg:relative lg:flex text-white lg:!opacity-100 lg:!translate-x-[-100%] whitespace-nowrap"
+        className={`chr-main-menu list-none block absolute w-64 left-0 top-0 p-6 text-2xl ${colorPalette[variant]} h-screen lg:h-auto lg:text-base lg:bg-transparent lg:!top-auto lg:!left-auto lg:!w-auto !lg:relative lg:flex lg:!opacity-100 lg:!translate-x-[-100%] whitespace-nowrap`}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         transition={{ spring: 400 }}

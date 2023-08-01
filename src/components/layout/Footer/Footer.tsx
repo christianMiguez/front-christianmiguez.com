@@ -14,9 +14,7 @@ export const Footer = () => {
   return (
     <div className="bg-grey-light py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center ">
-        <Link href="/" className="mb-4">
-          <Logo width={150} height={44} />
-        </Link>
+        <Logo width={150} height={44} />
         <span>Freelance Web Developer</span>
         <ul className="flex">
           <li>

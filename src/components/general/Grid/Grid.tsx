@@ -32,7 +32,7 @@ export const Grid = ({ items }: GridProps) => {
           <div className="mt-auto">
             <Button
               variant="stone"
-              href={process.env.NEXT_PUBLIC_SERVER_URL + "/" + item.href}
+              href={process.env.NEXT_PUBLIC_SERVER_URL + "/blog/" + item.href}
               text="Read more"
             />
           </div>

@@ -2,6 +2,7 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button, Logo, Menu } from "@/components/general";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 {
   /*  
@@ -15,9 +16,15 @@ import { motion } from "framer-motion";
 }
 
 export const Header = () => {
+  const pathName = usePathname();
+
+  const isHome = pathName === "/";
+
   return (
     <motion.header
-      className="absolute w-full z-10 p-4 top-[-100px]"
+      className={`absolute w-full z-10 p-4 top-[-100px] ${
+        isHome ? "" : "bg-grey-light"
+      }`}
       animate={{
         top: 0,
       }}
@@ -25,9 +32,9 @@ export const Header = () => {
     >
       <div className="md-container">
         <div className="flex items-center justify-between">
-          <Logo variant="white" width={150} height={44} />
+          <Logo variant={isHome ? "white" : "black"} width={150} height={44} />
           <nav className="flex items-center gap-6">
-            <Menu />
+            <Menu variant={isHome ? "white" : "black"} />
 
             <Button
               variant="orange"
@@ -37,14 +44,18 @@ export const Header = () => {
             <a
               href="https://www.linkedin.com/in/christianmiguez/"
               target="_blank"
-              className="text-white text-3xl hidden md:block"
+              className={`${
+                isHome ? "text-white" : "text-black"
+              } text-3xl hidden md:block`}
             >
               <FaLinkedin />
             </a>
             <a
               href="https://github.com/christianMiguez/"
               target="_blank"
-              className="text-white text-3xl hidden md:block"
+              className={`${
+                isHome ? "text-white" : "text-black"
+              } text-3xl hidden md:block`}
             >
               <FaGithub />
             </a>

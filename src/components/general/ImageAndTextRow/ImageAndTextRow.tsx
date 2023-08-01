@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-type ImageAndTextRowProps = {
+import { Button } from "..";
+export type ImageAndTextRowProps = {
   inverse?: boolean;
   title: string;
   text: string;
@@ -18,14 +19,14 @@ export const ImageAndTextRow = ({
   return (
     <div className={`${inverse ? "" : "bg-grey-light"} p-8`}>
       <div className="md-container mx-auto my-4">
-        <div className="md:grid md:grid-cols-2 gap-8">
+        <div className="lg:grid lg:grid-cols-2 gap-8">
           <div className={`${inverse ? "order-1" : "order-2"} self-center`}>
             <Image
               src={image}
               alt={title}
               width={485}
               height={340}
-              className="rounded-3xl t mx-auto mb-6 md:mb-0"
+              className="rounded-3xl t mx-auto mb-6"
             />
           </div>
           <div className={`${inverse ? "order-2" : "order-1"} self-center`}>
@@ -37,12 +38,12 @@ export const ImageAndTextRow = ({
               {title}
             </h3>
             <p
-              className={`text-center ${
+              className={`text-center mb-4 ${
                 inverse ? "lg:text-left" : "lg:text-right"
               }`}
               dangerouslySetInnerHTML={{ __html: text }}
             />
-            {href && <Link href={href}>Learn more</Link>}
+            {href && <Button variant="stone" text="Learn more" href={href} />}
           </div>
         </div>
       </div>
