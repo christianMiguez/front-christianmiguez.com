@@ -26,8 +26,6 @@ const getPost = async (slug: string) => {
       }
     ).then((resp) => resp.json());
 
-    console.log("Se cargó: ", post.title);
-
     return post;
   } catch (error) {
     // notFound();
