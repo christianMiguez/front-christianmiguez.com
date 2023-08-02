@@ -1,5 +1,4 @@
 import { Column } from "@/interfaces/post.interface";
-import React from "react";
 
 interface ContentProps {
   columns?: Column[];
@@ -7,7 +6,7 @@ interface ContentProps {
 
 const Content = ({ columns }: ContentProps) => {
   return (
-    <>
+    <div className="md-container mx-auto">
       {columns?.map((column) => {
         return (
           <div key={column.id}>
@@ -54,7 +53,7 @@ const Content = ({ columns }: ContentProps) => {
           </div>
         );
       })}
-    </>
+    </div>
   );
 };
 

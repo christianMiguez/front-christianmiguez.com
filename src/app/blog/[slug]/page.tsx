@@ -3,6 +3,7 @@ import { getPosts } from "@/utils/get-posts";
 import { getImage } from "@/utils/get-payload-image";
 import { Post } from "@/interfaces/post.interface";
 import Content from "@/components/layout/Post/Content";
+import CTA from "@/components/layout/Post/CTA";
 
 export async function generateStaticParams() {
   const posts = await getPosts(100);
@@ -46,24 +47,24 @@ export default async function Post({ params }: any) {
 
   return (
     <main className="py-28 px-4">
-      <div className="md-container mx-auto">
-        {
-          <>
-            <div className="hero-post">
-              <Image
-                src={heroImage}
-                alt={title}
-                width={980}
-                height={600}
-                className="rounded-3xl mx-auto mb-6 max-w-full"
-              />
-              <h1 className="text-4xl font-bold text-black mb-8">{title}</h1>
-            </div>
-            <div className="layout-post">
-              {post.layout.map((column) => {
-                switch (column.blockType) {
-                  case "mediaBlock":
-                    return (
+      {
+        <>
+          <div className="hero-post md-container mx-auto">
+            <Image
+              src={heroImage}
+              alt={title}
+              width={980}
+              height={600}
+              className="rounded-3xl mx-auto mb-6 max-w-full"
+            />
+            <h1 className="text-4xl font-bold text-black mb-8">{title}</h1>
+          </div>
+          <div className="layout-post">
+            {post.layout.map((column) => {
+              switch (column.blockType) {
+                case "mediaBlock":
+                  return (
+                    <div className="md-container mx-auto">
                       <Image
                         src={getImage(column.media!.url)}
                         alt={column.media!.alt}
@@ -71,19 +72,31 @@ export default async function Post({ params }: any) {
                         height={600}
                         className="rounded-3xl mx-auto mb-6 max-w-full"
                       />
-                    );
-                  case "content":
-                    return <Content columns={column.columns} />;
-                  case "cta":
-                    return "Cta<br/>";
-                  default:
-                    return "Default<br/>";
-                }
-              })}
-            </div>
-          </>
-        }
-      </div>
+                    </div>
+                  );
+                case "content":
+                  return <Content columns={column.columns} />;
+                case "cta":
+                  const heroText = column.richText![0].children[0].text!;
+                  const label = column.links![0].link.label;
+                  const href = column.links![0].link.url;
+                  // const appearance = column.links![0].link.appearance;
+
+                  return (
+                    <CTA
+                      heroText={heroText}
+                      label={label}
+                      href={href}
+                      appearance="orange"
+                    />
+                  );
+                default:
+                  return "Default<br/>";
+              }
+            })}
+          </div>
+        </>
+      }
     </main>
   );
 }
