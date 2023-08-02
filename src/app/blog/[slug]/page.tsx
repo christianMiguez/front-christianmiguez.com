@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { getPosts } from "@/utils/get-posts";
 import { getImage } from "@/utils/get-payload-image";
+import { Post } from "@/interfaces/post.interface";
+import Content from "@/components/layout/Post/Content";
 
 export async function generateStaticParams() {
   const posts = await getPosts(100);
@@ -26,7 +28,9 @@ const getPost = async (slug: string) => {
       }
     ).then((resp) => resp.json());
 
-    return post;
+    console.log(post.docs[0]);
+
+    return post.docs[0];
   } catch (error) {
     // notFound();
     throw new Error("error");
@@ -34,27 +38,52 @@ const getPost = async (slug: string) => {
 };
 
 export default async function Post({ params }: any) {
-  const post = await getPost(params.slug);
+  const post: Post = await getPost(params.slug);
 
-  const title = post.docs[0].title;
-  const heroText = post.docs[0].hero.richText[0].children[0].text;
-  const heroImage = getImage(post.docs[0].hero.media.url);
+  const title = post.title;
+  const heroText = post.hero.richText[0].children[0].text;
+  const heroImage = getImage(post.hero.media.url);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {
-        <>
-          <h1 className="text-4xl font-bold text-black">{title}</h1>
-          <Image
-            src={heroImage}
-            alt={title}
-            width={485}
-            height={340}
-            className="rounded-3xl t mx-auto mb-6"
-          />
-          <p>{heroText}</p>
-        </>
-      }
+    <main className="py-28 px-4">
+      <div className="md-container mx-auto">
+        {
+          <>
+            <div className="hero-post">
+              <Image
+                src={heroImage}
+                alt={title}
+                width={980}
+                height={600}
+                className="rounded-3xl mx-auto mb-6 max-w-full"
+              />
+              <h1 className="text-4xl font-bold text-black mb-8">{title}</h1>
+            </div>
+            <div className="layout-post">
+              {post.layout.map((column) => {
+                switch (column.blockType) {
+                  case "mediaBlock":
+                    return (
+                      <Image
+                        src={getImage(column.media!.url)}
+                        alt={column.media!.alt}
+                        width={980}
+                        height={600}
+                        className="rounded-3xl mx-auto mb-6 max-w-full"
+                      />
+                    );
+                  case "content":
+                    return <Content columns={column.columns} />;
+                  case "cta":
+                    return "Cta<br/>";
+                  default:
+                    return "Default<br/>";
+                }
+              })}
+            </div>
+          </>
+        }
+      </div>
     </main>
   );
 }

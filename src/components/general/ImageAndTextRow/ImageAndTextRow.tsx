@@ -21,22 +21,46 @@ export const ImageAndTextRow = ({
       <div className="md-container mx-auto my-4">
         <div className="lg:grid lg:grid-cols-2 gap-8">
           <div className={`${inverse ? "order-1" : "order-2"} self-center`}>
-            <Image
-              src={image}
-              alt={title}
-              width={485}
-              height={340}
-              className="rounded-3xl t mx-auto mb-6"
-            />
+            {href ? (
+              <Link href={href}>
+                <Image
+                  src={image}
+                  alt={title}
+                  width={485}
+                  height={340}
+                  className="rounded-3xl t mx-auto mb-6"
+                />
+              </Link>
+            ) : (
+              <Image
+                src={image}
+                alt={title}
+                width={485}
+                height={340}
+                className="rounded-3xl t mx-auto mb-6"
+              />
+            )}
           </div>
           <div className={`${inverse ? "order-2" : "order-1"} self-center`}>
-            <h3
-              className={`text-center ${
-                inverse ? "lg:text-left" : "lg:text-right"
-              } md:text-center text-blue-stone mb-4`}
-            >
-              {title}
-            </h3>
+            {href ? (
+              <Link href={href}>
+                <h3
+                  className={`text-center ${
+                    inverse ? "lg:text-left" : "lg:text-right"
+                  } md:text-center text-blue-stone mb-4`}
+                >
+                  {title}
+                </h3>
+              </Link>
+            ) : (
+              <h3
+                className={`text-center ${
+                  inverse ? "lg:text-left" : "lg:text-right"
+                } md:text-center text-blue-stone mb-4`}
+              >
+                {title}
+              </h3>
+            )}
             <p
               className={`text-center mb-4 ${
                 inverse ? "lg:text-left" : "lg:text-right"
