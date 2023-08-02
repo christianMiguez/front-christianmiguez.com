@@ -11,6 +11,9 @@
   --color-blue-stone: #3b919b;
   --color-blue-middle: #3a6289;
   --color-grey-light: #f6f6f6;
+  --gradient: linear-gradient(10deg, #ffaa00, #ff6a00);
+  --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
+  --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,6 +53,7 @@ body {
 
 @import "../styles/colors.scss";
 @import "../styles/burger-menu.scss";
+@import "../styles/modal.scss";
 
 h1,
 .h1 {
