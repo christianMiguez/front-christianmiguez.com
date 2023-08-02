@@ -6,7 +6,7 @@ interface ContentProps {
 
 const Content = ({ columns }: ContentProps) => {
   return (
-    <div className="md-container mx-auto">
+    <div className="md-container mx-auto px-4">
       {columns?.map((column) => {
         return (
           <div key={column.id}>

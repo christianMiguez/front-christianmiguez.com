@@ -46,10 +46,10 @@ export default async function Post({ params }: any) {
   const heroImage = getImage(post.hero.media.url);
 
   return (
-    <main className="py-28 px-4">
+    <main className="py-28">
       {
         <>
-          <div className="hero-post md-container mx-auto">
+          <div className="hero-post md-container mx-auto px-4">
             <Image
               src={heroImage}
               alt={title}
@@ -64,7 +64,7 @@ export default async function Post({ params }: any) {
               switch (column.blockType) {
                 case "mediaBlock":
                   return (
-                    <div className="md-container mx-auto">
+                    <div className="md-container mx-auto px-4">
                       <Image
                         src={getImage(column.media!.url)}
                         alt={column.media!.alt}
