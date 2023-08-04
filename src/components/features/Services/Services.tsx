@@ -25,8 +25,8 @@ export const Services = () => {
         Unlock your imagination
       </h3>
       <p className="text-center">
-        ...and I&apos;ll turn it into reality! Let&apos;s explore what I can
-        bring you.
+        ...and I&apos;ll turn it into reality! Let&apos;s explore what I can do
+        for you.
       </p>
       {data.map((item, index) => {
         return (

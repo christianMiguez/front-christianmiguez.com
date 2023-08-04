@@ -3,7 +3,7 @@ export const WORKS = [
     id: 0,
     title: "Estudio Boix - WordPress Website",
     url: "https://www.estudioboix.com.uy/",
-    image: "https://picsum.photos/600/900",
+    image: "/assets/images/masonry/big-0.jpg",
     description:
       "Website design and development for Estudio Boix, an agency that provides surveying services throughout Uruguay and abroad. ",
     technologies: ["WordPress", "PHP", "JavaScript", "HTML", "CSS"],
@@ -45,7 +45,7 @@ export const WORKS = [
     id: 4,
     title: "PFP: Proyecto Fútbol Profesional",
     url: "https://proyectofutboluy.com/",
-    image: "https://picsum.photos/600/900",
+    image: "/assets/images/big-0.jpg",
     description:
       "WordPress website development for PFP, a talent adquisition agency for soccer players.",
     technologies: ["WordPress", "PHP", "JavaScript", "HTML", "CSS"],

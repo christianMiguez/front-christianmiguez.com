@@ -59,26 +59,58 @@ const Modal = ({ handleClose, modalContent }: any) => {
               <h4 className="h5 font-thin mb-4">Description</h4>
               <p className="mb-6">{modalContent.description}</p>
               <h4 className="h5 font-thin mb-4">Technologies</h4>
-              <div className="flex gap-4 text-4xl mb-6">
+              <div className="flex gap-1 text-3xl mb-6 ">
                 {modalContent.technologies.map((technology: any) => {
                   switch (technology) {
                     case "WordPress":
-                      return <FaWordpress />;
+                      return (
+                        <div className="p-3 bg-white text-[#00749C] rounded-full">
+                          <FaWordpress />
+                        </div>
+                      );
                     case "React":
-                      return <FaReact />;
+                      return (
+                        <div className="p-3 bg-white text-[#149eca] rounded-full">
+                          <FaReact />
+                        </div>
+                      );
 
                     case "PHP":
-                      return <FaPhp />;
+                      return (
+                        <div className="p-3 bg-white text-[#4F69C6] rounded-full">
+                          <FaPhp />
+                        </div>
+                      );
                     case "JavaScript":
-                      return <FaJs />;
+                      return (
+                        <div className="p-3 bg-white text-[#F0DB4F] rounded-full">
+                          <FaJs />
+                        </div>
+                      );
                     case "HTML":
-                      return <FaHtml5 />;
+                      return (
+                        <div className="p-3 bg-white text-[#e34c26] rounded-full">
+                          <FaHtml5 />
+                        </div>
+                      );
                     case "CSS":
-                      return <FaCss3 />;
+                      return (
+                        <div className="p-3 bg-white text-[#264de4] rounded-full">
+                          <FaCss3 />
+                        </div>
+                      );
                     case "Bootstrap":
-                      return <FaBootstrap />;
+                      return (
+                        <div className="p-3 bg-white text-[#149eca] rounded-full">
+                          <FaBootstrap />
+                        </div>
+                      );
                     case "WooCommerce":
-                      return <FaShoppingCart />;
+                      return (
+                        <div className="p-3 bg-white text-[#149eca] rounded-full">
+                          <FaShoppingCart />
+                        </div>
+                      );
                     default:
                       return <p className="mb-6">{technology}</p>;
                   }
@@ -92,7 +124,7 @@ const Modal = ({ handleClose, modalContent }: any) => {
                 External link <FaExternalLinkAlt />
               </a>
               <button
-                className="p-3 px-6 bg-grey-light ml-auto text-black rounded-lg absolute bottom-4 right-4"
+                className="p-3 px-6 bg-gray-700 ml-auto text-white rounded-lg absolute bottom-4 right-4 font-bold"
                 onClick={handleClose}
               >
                 Close
