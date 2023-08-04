@@ -5,6 +5,7 @@ const nextConfig = {
       "localhost",
       "admin-christianmiguez-com.onrender.com",
       "christianmiguez.vercel.app",
+      "picsum.photos",
     ],
   },
 };

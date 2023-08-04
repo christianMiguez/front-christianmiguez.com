@@ -1,31 +1,22 @@
-.modalFramer {
-  .backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000000e1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
-  }
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(1 37 58 / 90%);
 
   .modal {
-    width: clamp(50%, 700px, 90%);
-    height: min(50%, 300px);
-
+    width: 790px;
+    max-width: 100%;
+    height: auto;
     margin: auto;
-    padding: 0 2rem;
     border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .orange-gradient {
-    background: var(--gradient);
+    // background: var(--gradient);
+    background-color: var(--color-orange);
   }
 
   .green-gradient {

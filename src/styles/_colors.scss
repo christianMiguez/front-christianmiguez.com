@@ -9,6 +9,14 @@
 .bg-blue-dark {
   background-color: var(--color-blue-dark);
 }
+.bg-blue-dark-gradient {
+  background: rgb(2, 48, 85);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 48, 85, 1) 35%,
+    rgb(0, 68, 128) 100%
+  );
+}
 
 .text-blue-dark {
   color: var(--color-blue-dark);
