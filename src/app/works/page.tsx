@@ -26,7 +26,7 @@ export default function Works() {
 
   return (
     <div className="bg-blue-dark-gradient">
-      <div className="h-full z-100 text-white relative">
+      <div className="h-full text-white relative">
         <AnimatePresence
           initial={false}
           mode="wait"
@@ -41,7 +41,7 @@ export default function Works() {
           )}
         </AnimatePresence>
 
-        <main className="py-28 z-10">
+        <main className="py-28">
           <div className="hero-post container mx-auto px-4">
             <h1 className="h2 mb-8 text-center">Works</h1>
 

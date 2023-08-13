@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 type BurgerMenuButtonProps = {
   variant?: "white" | "black";

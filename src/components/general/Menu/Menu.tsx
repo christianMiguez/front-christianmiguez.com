@@ -3,6 +3,7 @@ import { BurgerMenuButton } from "@/components/features";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type MenuProps = {
   variant: "black" | "white";
@@ -10,7 +11,7 @@ type MenuProps = {
 const Menu = ({ variant }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const variants = {
-    open: { opacity: 1, x: 0 },
+    open: { opacity: 1, x: 0, backgroundColor: "rgba(0,0,0)", color: "white" },
     closed: { opacity: 0, x: "-100%" },
   };
 
@@ -32,10 +33,13 @@ const Menu = ({ variant }: MenuProps) => {
     white: "text-white",
   };
 
+  const pathName = usePathname();
+  const isHome = pathName === "/";
+
   return (
     <>
       <motion.ul
-        className={`chr-main-menu list-none block absolute w-64 left-0 top-0 p-6 text-2xl ${colorPalette[variant]} h-screen lg:h-auto lg:text-base lg:bg-transparent lg:!top-auto lg:!left-auto lg:!w-auto !lg:relative lg:flex lg:!opacity-100 lg:!translate-x-[-100%] whitespace-nowrap`}
+        className={`chr-main-menu list-none block absolute w-full left-0 top-0 p-6 text-2xl ${colorPalette[variant]} h-screen lg:h-auto lg:text-base lg:bg-transparent lg:!top-auto lg:!left-auto lg:!w-auto !lg:relative lg:flex lg:!opacity-100 lg:!translate-x-[-100%] whitespace-nowrap`}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         transition={{ spring: 400 }}
@@ -43,25 +47,48 @@ const Menu = ({ variant }: MenuProps) => {
         ref={menuRef}
         onClick={handleBackdropClick}
       >
-        <li></li>
-        <li>
-          <Link href="/about" className="p-2 mb-1 block">
+        <li className="mt-20 lg:mt-0">
+          <Link
+            href="/about"
+            className="p-2 mb-1 block"
+            onClick={() => setIsOpen(false)}
+          >
             About
           </Link>
         </li>
         <li>
-          <Link href="/works" className="p-2 mb-1 block">
+          <Link
+            href="/works"
+            className="p-2 mb-1 block"
+            onClick={() => setIsOpen(false)}
+          >
             Works
           </Link>
         </li>
         <li>
-          <Link href="/blog" className="p-2 mb-1 block">
+          <Link
+            href="/blog"
+            className="p-2 mb-1 block"
+            onClick={() => setIsOpen(false)}
+          >
             Blog
           </Link>
         </li>
       </motion.ul>
 
-      <BurgerMenuButton menuBehavior={showMenuSlide} isOpen={isOpen} />
+      <BurgerMenuButton
+        menuBehavior={showMenuSlide}
+        isOpen={isOpen}
+        variant={
+          isHome
+            ? variant === "white"
+              ? "white"
+              : "black"
+            : isOpen
+            ? "white"
+            : "black"
+        }
+      />
     </>
   );
 };

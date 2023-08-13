@@ -4,17 +4,6 @@ import { Button, Logo, Menu } from "@/components/general";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-{
-  /*  
-    TODO: 1. - HTML:
-             -- logo
-             -- top menu
-             -- button
-             -- social icons
-             -- responsive menu
-    */
-}
-
 export const Header = () => {
   const pathName = usePathname();
 
@@ -22,7 +11,7 @@ export const Header = () => {
 
   return (
     <motion.header
-      className={`absolute w-full z-10 p-4 top-[-100px] ${
+      className={`absolute w-full p-4 z-10 top-[-100px] ${
         isHome ? "" : "bg-grey-light"
       }`}
       animate={{
@@ -40,6 +29,7 @@ export const Header = () => {
               variant="orange"
               href="mailto:kisquian@gmail.com"
               text="Budget Request"
+              className="hidden md:block"
             />
             <a
               href="https://www.linkedin.com/in/christianmiguez/"
