@@ -22,7 +22,10 @@ export default function About() {
                 </a> */}
               </div>
               <span className="text-blue-dark text-xl pt-2">
-                Web Developer Contact at{" "}
+                Web Developer
+                <br />
+                <br />
+                Contact me at{" "}
                 <strong className="text-orange-600 text-base">
                   christianmiguez.com
                 </strong>
