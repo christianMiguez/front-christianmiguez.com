@@ -17,6 +17,16 @@ export const metadata: Metadata = {
   title: "Christian Miguez",
   description:
     "Web Developer - WordPress Expert, React, Next.js, WPGraphQL, AWS, PHP, MySQL, Web Design, SEO, and more.",
+  openGraph: {
+    images: [
+      {
+        url: "/assets/images/me2.png",
+        width: 350,
+        height: 350,
+        alt: "Christian Miguez",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
