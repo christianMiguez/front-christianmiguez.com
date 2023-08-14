@@ -45,7 +45,7 @@ export default async function Post({ params }: any) {
   const heroImage = getImage(post.hero.media.url);
 
   return (
-    <main className="py-28 duration-1000 animate-fadeInUp">
+    <main className="py-32 duration-1000 animate-fadeInUp">
       {
         <>
           <div className="hero-post md-container mx-auto px-4">

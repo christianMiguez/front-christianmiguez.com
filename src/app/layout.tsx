@@ -2,6 +2,7 @@ import { Header, Footer } from "@/components/layout/";
 import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter, Open_Sans } from "next/font/google";
+import GoogleAnalytics from "@/components/features/GoogleAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/images/favicon.ico" />
+        <GoogleAnalytics GA_TRACKING_ID={"G-C4D9EFW4VL"} />
       </head>
       <body className={`${inter.className} ${openSans.className}`}>
         <Header />
