@@ -180,7 +180,7 @@ export default async function About() {
               </div>
 
               <div className="resume_content pl-16 mb-10">
-                <span className="date text-gray-400">2023</span>
+                <span className="date text-gray-400">Current</span>
                 <h3 className={`h5 ${styles.dot}`}>Computer Science</h3>
                 <p className="small mb-4">at HarvardX CS50x</p>
               </div>
