@@ -46,7 +46,7 @@ export const HomeHero = () => {
               />
             </div>
             <h2 className="h1 mb-6 md:mb-24">
-              Freelance
+              Full Stack
               <br />
               Web Developer
             </h2>
