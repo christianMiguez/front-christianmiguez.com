@@ -62,7 +62,7 @@ export default function Works() {
                   <Image
                     data-id="0"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-0.jpg"
+                    src="/assets/images/masonry/image-0.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={768}
@@ -75,7 +75,7 @@ export default function Works() {
                   <Image
                     data-id="1"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-1.jpg"
+                    src="/assets/images/masonry/image-1.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={500}
@@ -88,7 +88,7 @@ export default function Works() {
                   <Image
                     data-id="2"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-2.jpg"
+                    src="/assets/images/masonry/image-2.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={566}
@@ -103,7 +103,7 @@ export default function Works() {
                   <Image
                     data-id="3"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-3.jpg"
+                    src="/assets/images/masonry/image-3.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={598}
@@ -116,7 +116,7 @@ export default function Works() {
                   <Image
                     data-id="4"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-4.jpg"
+                    src="/assets/images/masonry/image-4.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={854}
@@ -129,7 +129,7 @@ export default function Works() {
                   <Image
                     data-id="5"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-5.jpg"
+                    src="/assets/images/masonry/image-5.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={382}
@@ -144,7 +144,7 @@ export default function Works() {
                   <Image
                     data-id="6"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-6.jpg"
+                    src="/assets/images/masonry/image-6.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={850}
@@ -157,7 +157,7 @@ export default function Works() {
                   <Image
                     data-id="7"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-7.jpg"
+                    src="/assets/images/masonry/image-7.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={464}
@@ -170,7 +170,7 @@ export default function Works() {
                   <Image
                     data-id="8"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-8.jpg"
+                    src="/assets/images/masonry/image-8.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={520}
@@ -185,7 +185,7 @@ export default function Works() {
                   <Image
                     data-id="9"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-9.jpg"
+                    src="/assets/images/masonry/image-9.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={422}
@@ -198,7 +198,7 @@ export default function Works() {
                   <Image
                     data-id="10"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-10.jpg"
+                    src="/assets/images/masonry/image-10.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={1024}
@@ -211,7 +211,7 @@ export default function Works() {
                   <Image
                     data-id="11"
                     className="h-auto max-w-full rounded-xl"
-                    src="/assets/images/masonry/image-11.jpg"
+                    src="/assets/images/masonry/image-11.webp"
                     alt="Christian Miguez - WORK: #"
                     width={610}
                     height={388}
