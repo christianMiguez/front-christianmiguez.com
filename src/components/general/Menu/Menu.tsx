@@ -19,8 +19,10 @@ const Menu = ({ variant }: MenuProps) => {
     setIsOpen((isOpen) => !isOpen);
     if (!isOpen) {
       document.body.style.overflow = "hidden";
+      document.getElementsByTagName("body")[0].style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
     }
   };
 
@@ -30,6 +32,7 @@ const Menu = ({ variant }: MenuProps) => {
     // if click is 400px to the left of the menu, close it
     if (e.clientX > 256) {
       setIsOpen(false);
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
     }
   };
 
@@ -56,7 +59,10 @@ const Menu = ({ variant }: MenuProps) => {
           <Link
             href="/about"
             className="p-2 mb-1 block"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              document.getElementsByTagName("body")[0].style.overflow = "auto";
+            }}
           >
             About
           </Link>
@@ -65,7 +71,10 @@ const Menu = ({ variant }: MenuProps) => {
           <Link
             href="/works"
             className="p-2 mb-1 block"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              document.getElementsByTagName("body")[0].style.overflow = "auto";
+            }}
           >
             Works
           </Link>
@@ -74,7 +83,10 @@ const Menu = ({ variant }: MenuProps) => {
           <Link
             href="/blog"
             className="p-2 mb-1 block"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              document.getElementsByTagName("body")[0].style.overflow = "auto";
+            }}
           >
             Blog
           </Link>
