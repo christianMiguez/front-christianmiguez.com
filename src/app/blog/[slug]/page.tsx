@@ -4,6 +4,7 @@ import { getImage } from "@/utils/get-payload-image";
 import { Post } from "@/interfaces/post.interface";
 import Content from "@/components/layout/Post/Content";
 import CTA from "@/components/layout/Post/CTA";
+import GoogleAnalytics from "@/components/features/GoogleAnalytics";
 
 export async function generateStaticParams() {
   const posts = await getPosts(100);
@@ -46,6 +47,8 @@ export default async function Post({ params }: any) {
 
   return (
     <main className="py-32 duration-1000 animate-fadeInUp">
+      <GoogleAnalytics GA_TRACKING_ID={"G-C4D9EFW4VL"} />
+
       {
         <>
           <div className="hero-post md-container mx-auto px-4">

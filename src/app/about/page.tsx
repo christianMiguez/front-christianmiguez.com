@@ -1,8 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
+import GoogleAnalytics from "@/components/features/GoogleAnalytics";
 export default async function About() {
   return (
     <main className="py-32 md:py-32 transition-opacity animate-fadeInUp duration-700 opacity-100">
+      <GoogleAnalytics GA_TRACKING_ID={"G-C4D9EFW4VL"} />
+
       <div className="md-container">
         <div className={`lg:grid lg:grid-cols-3 gap-8 px-4 lg:px-0`}>
           <div className="lg:col-span-2 md:order-2">

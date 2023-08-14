@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Modal from "@/components/features/Modal/Modal";
 import { WORKS } from "@/utils/data";
+import GoogleAnalytics from "@/components/features/GoogleAnalytics";
 
 export default function Works() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -30,6 +31,8 @@ export default function Works() {
 
   return (
     <div className="bg-blue-dark-gradient">
+      <GoogleAnalytics GA_TRACKING_ID={"G-C4D9EFW4VL"} />
+
       <div className="h-full text-white relative">
         <AnimatePresence
           initial={false}
