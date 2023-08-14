@@ -22,8 +22,10 @@ export default function About() {
                 </a> */}
               </div>
               <span className="text-blue-dark text-xl pt-2">
-                Contact at{" "}
-                <strong className="text-orange-600">christianmiguez.com</strong>
+                Web Developer Contact at{" "}
+                <strong className="text-orange-600 text-base">
+                  christianmiguez.com
+                </strong>
               </span>
             </div>
             <div className={`${styles["resume_section"]} mt-10`}>
