@@ -27,7 +27,7 @@ export default function About() {
                 <br />
                 Contact me at{" "}
                 <strong className="text-orange-600 text-base">
-                  christianmiguez.com
+                  christianmiguez.com - kisquian@gmail.com
                 </strong>
               </span>
             </div>
