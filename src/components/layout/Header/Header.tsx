@@ -11,7 +11,7 @@ export const Header = () => {
 
   return (
     <motion.header
-      className={`absolute w-full p-4 z-10 top-[-100px] ${
+      className={`hidden absolute w-full p-4 z-10 top-[-100px] ${
         isHome ? "" : "bg-grey-light"
       }`}
       animate={{

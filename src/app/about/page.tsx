@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-export default async function About() {
+export default function About() {
   return (
-    <main className="py-32 md:py-32">
+    <main className="py-6 md:py-6">
       <div className="md-container">
         <div className={`lg:grid lg:grid-cols-3 gap-8 px-4 lg:px-0`}>
           <div className="lg:col-span-2 md:order-2">

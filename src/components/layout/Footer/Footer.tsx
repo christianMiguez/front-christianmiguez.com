@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="bg-grey-light py-8">
+    <div className="bg-grey-light py-8 hidden">
       <div className="md-container mx-auto flex flex-col md:flex-row justify-between items-center ">
         <Logo width={150} height={44} />
         <span className="py-6">Freelance Web Developer</span>
