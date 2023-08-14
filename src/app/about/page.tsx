@@ -2,14 +2,25 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 export default async function About() {
   return (
-    <main className="py-32">
+    <main className="py-32 md:py-32">
       <div className="md-container">
         <div className={`lg:grid lg:grid-cols-3 gap-8 px-4 lg:px-0`}>
           <div className="lg:col-span-2 md:order-2">
             <div className="resume_heading md:h-[218px] flex flex-col justify-center">
-              <h2 className="h1 text-blue-middle font-extrabold tracking-tighter">
-                Christian Miguez
-              </h2>
+              <div className="flex items-center">
+                <h2 className="h2 md:h1 text-blue-middle font-extrabold tracking-tighter">
+                  Christian Miguez
+                </h2>
+                {/* <a href="/resume.pdf" target="_blank">
+                  <Image
+                    src="/assets/images/icons/pdf.svg"
+                    width={48}
+                    height={48}
+                    className="p-1 ml-4"
+                    alt="Download as PDF"
+                  />
+                </a> */}
+              </div>
               <span className="text-blue-dark text-xl font-bold">
                 Web Developer
               </span>
