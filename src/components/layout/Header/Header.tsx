@@ -28,8 +28,9 @@ export const Header = () => {
             <Button
               variant="orange"
               href="mailto:kisquian@gmail.com"
-              text="Budget Request"
-              className="hidden md:block"
+              text="Get in Touch"
+              className="hidden md:flex items-center"
+              icon="email"
             />
             <a
               href="https://www.linkedin.com/in/christianmiguez/"

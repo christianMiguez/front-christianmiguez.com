@@ -73,3 +73,7 @@ h5,
 .thin-style {
   @apply text-2xl md:text-4xl font-thin;
 }
+
+.btn {
+  @apply hover:rotate-[-3deg] hover:scale-125 transition-all duration-100 ease-in-out hover:brightness-110;
+}
