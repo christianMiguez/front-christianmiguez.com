@@ -227,7 +227,7 @@ export default function About() {
                   HTML
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "95%" }}
                 >
                   <div
@@ -241,7 +241,7 @@ export default function About() {
                   CSS
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "95%" }}
                 >
                   <div
@@ -255,7 +255,7 @@ export default function About() {
                   JavaScript
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "80%" }}
                 >
                   <div
@@ -269,7 +269,7 @@ export default function About() {
                   PHP
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "80%" }}
                 >
                   <div
@@ -283,7 +283,7 @@ export default function About() {
                   WordPress
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "90%" }}
                 >
                   <div
@@ -297,7 +297,7 @@ export default function About() {
                   React
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "75%" }}
                 >
                   <div
@@ -312,7 +312,7 @@ export default function About() {
                   Next.js
                 </span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "75%" }}
                 >
                   <div
@@ -338,7 +338,7 @@ export default function About() {
               <div className="resume_content pl-16 mb-10">
                 <span className="date">Spanish</span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "100%" }}
                 >
                   <div
@@ -351,7 +351,7 @@ export default function About() {
               <div className="resume_content pl-16 mb-10">
                 <span className="date">English</span>
                 <div
-                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
                   style={{ width: "75%" }}
                 >
                   <div
