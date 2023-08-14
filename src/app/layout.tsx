@@ -16,7 +16,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Christian Miguez",
   description:
-    "Senior Web Developer - WordPress Expert, React, Next.js, WPGraphQL, AWS, PHP, MySQL, Web Design, SEO, and more.",
+    "Web Developer - WordPress Expert, React, Next.js, WPGraphQL, AWS, PHP, MySQL, Web Design, SEO, and more.",
 };
 
 export default function RootLayout({
