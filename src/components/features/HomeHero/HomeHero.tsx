@@ -38,7 +38,7 @@ export const HomeHero = () => {
             </span>
             <div className="md:hidden">
               <Image
-                src="/assets/images/meRemastered.jpg"
+                src="/assets/images/me2.png"
                 alt="Christian Miguez"
                 width={150}
                 height={150}

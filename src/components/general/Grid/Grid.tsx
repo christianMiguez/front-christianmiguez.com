@@ -35,16 +35,15 @@ export const Grid = ({ items }: GridProps) => {
           </Link>
           <Link
             href={process.env.NEXT_PUBLIC_SERVER_URL + "/blog/" + item.href}
+            className="pb-4 d-block"
           >
-            <h3 className="h5 mb-4">{item.title}</h3>
+            <h3 className="h4">{item.title}</h3>
           </Link>
-          <div className="mt-auto">
-            <Button
-              variant="stone"
-              href={process.env.NEXT_PUBLIC_SERVER_URL + "/blog/" + item.href}
-              text="Read more"
-            />
-          </div>
+          <Button
+            variant="stone"
+            href={process.env.NEXT_PUBLIC_SERVER_URL + "/blog/" + item.href}
+            text="Read more"
+          />
         </div>
       ))}
     </div>

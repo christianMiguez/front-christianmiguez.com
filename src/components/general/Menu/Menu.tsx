@@ -17,6 +17,11 @@ const Menu = ({ variant }: MenuProps) => {
 
   const showMenuSlide = () => {
     setIsOpen((isOpen) => !isOpen);
+    if (!isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
   };
 
   // detect if click on chr-main-menu ::before pseudo-element

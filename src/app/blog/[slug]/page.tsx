@@ -57,7 +57,9 @@ export default async function Post({ params }: any) {
               height={600}
               className="rounded-3xl mx-auto mb-6 max-w-full"
             />
-            <h1 className="text-4xl font-bold text-black mb-8">{title}</h1>
+            <h1 className="text-xl md:text-4xl font-bold text-black mb-4 md:mb-8">
+              {title}
+            </h1>
           </div>
           <div className="layout-post">
             {post.layout.map((column) => {

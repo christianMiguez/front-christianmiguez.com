@@ -2,17 +2,169 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 export default async function About() {
   return (
-    <main className={` py-28`}>
+    <main className="py-32">
       <div className="md-container">
-        <div className={`lg:grid lg:grid-cols-3 gap-8 `}>
-          <div className="lg:col-span-1 p-3 pr-10 bg-grey-light rounded-xl">
+        <div className={`lg:grid lg:grid-cols-3 gap-8 px-4 lg:px-0`}>
+          <div className="lg:col-span-2 md:order-2">
+            <div className="resume_heading md:h-[218px] flex flex-col justify-center">
+              <h2 className="h1 text-blue-middle font-extrabold tracking-tighter">
+                Christian Miguez
+              </h2>
+              <span className="text-blue-dark text-xl font-bold">
+                Web Developer
+              </span>
+            </div>
+            <div className={`${styles["resume_section"]} mt-10`}>
+              <div className="resume_title flex gap-4 items-center mb-4">
+                <Image
+                  src="/assets/images/icons/profile.svg"
+                  width={48}
+                  height={48}
+                  className="p-1"
+                  alt="Profile"
+                />
+                <h3 className="h4 text-blue-middle">About me</h3>
+              </div>
+
+              <div className="resume_content pl-16 mb-10">
+                <p className={`h5 font-bold mb-4 ${styles.dot}`}>
+                  Hi there! 🙂
+                </p>
+                <p>
+                  I&apos;m a {new Date().getFullYear() - 1991} years old guy
+                  from Uruguay who always loved web design and programming. I
+                  started my career as a web developer in 2012 and since then
+                  I&apos;ve been working in various companies with different
+                  technologies like HTML, CSS, JavaScript, TypeScript, PHP,
+                  WordPress, React, NextJS, NodeJS, and others. I&apos;m a
+                  self-taught person who loves to learn new things and I&apos;m
+                  always looking for new challenges. Nothing makes me happier
+                  than help people to achieve their goals, and be as
+                  professional as possible.
+                </p>
+              </div>
+            </div>
+
+            <div className={`${styles["resume_section"]} mt-20`}>
+              <div className="resume_title flex gap-4 items-center mb-4">
+                <Image
+                  src="/assets/images/icons/experience.svg"
+                  width={48}
+                  height={48}
+                  className="p-1"
+                  alt="Experience"
+                />
+                <h3 className="h4 text-blue-middle">Experience</h3>
+              </div>
+
+              <div className="resume_content pl-16 mb-10">
+                <span className="date text-gray-400">2018 - 2023</span>
+                <h3 className={`h5 ${styles.dot}`}>
+                  Senior WordPress Developer
+                </h3>
+                <p className="small mb-4">at OnPoint Global</p>
+                <p className="mb-4">
+                  OnPoint Global is a high growth data driven internet company
+                  that retains a large editorial and publishing staff to develop
+                  original content across its portfolio of vertical and geo
+                  focused brands.
+                </p>
+                <p>
+                  My work there was work along a big team of developers and
+                  designers to create and maintain WordPress websites for the
+                  company and its clients. In the last time I was working with
+                  React and NextJS to create new websites and improve the UX of
+                  the existing ones.
+                </p>
+              </div>
+
+              <div className="resume_content pl-16 mb-10">
+                <span className="date text-gray-400">2014 - 2018</span>
+                <h3 className={`h5 ${styles.dot}`}>WordPress Developer</h3>
+                <p className="small mb-4">at Tenfield.com</p>
+                <p className="mb-4">
+                  Tenfield is a broadcasting corporation which holds the
+                  commercial rights to broadcast the Uruguayan football and
+                  basketball.
+                </p>
+                <p>
+                  My work there was create and maintain WordPress websites for
+                  the company, creating custom rank tables for the football and
+                  basketball leagues, and creating custom plugins to manage the
+                  content of the websites.
+                </p>
+              </div>
+
+              <div className="resume_content pl-16 mb-10">
+                <span className="date text-gray-400">2013 - 2014</span>
+                <h3 className={`h5 ${styles.dot}`}>Web developer</h3>
+                <p className="small mb-4">at Wintrillions.com</p>
+                <p className="mb-4">
+                  Established in 2005, WinTrillions is an amazing online lottery
+                  provider offering lotteries, syndicates, millionaire raffles
+                  and scratch cards. It provides players with the opportunity to
+                  participate in draws of the most popular lotteries around the
+                  world.
+                </p>
+                <p>
+                  In Wintrillions the main tasks I had were: Design and Layout
+                  newsletters and their Casino website
+                </p>
+              </div>
+
+              <div className="resume_content pl-16 mb-10">
+                <span className="date text-gray-400">2012 - 2013</span>
+                <h3 className={`h5 ${styles.dot}`}>Web Developer</h3>
+                <p className="small mb-4">at Meeting</p>
+                <p className="mb-4">
+                  Meeting is a creative digital agency based in Montevideo,
+                  which provides services in the areas of web design, web
+                  development, mobile applications, and digital marketing.
+                </p>
+                <p>
+                  In Meeting I was working as a web developer, creating websites
+                  for the company and its clients using just HTML, CSS, JS, PHP
+                  and WordPress.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className={`${styles["resume_section"]} mt-20 hidden lg:block`}
+            >
+              <div className="resume_title flex gap-4 items-center mb-4">
+                <Image
+                  src="/assets/images/icons/hobbies.svg"
+                  width={48}
+                  height={48}
+                  className="p-1"
+                  alt="Hobbies"
+                />
+                <h3 className="h4 text-blue-middle">Hobbies</h3>
+              </div>
+
+              <div className="resume_content pl-16 mb-10">
+                <p>
+                  Learning and playing with new technologies is one of my
+                  favorite hobbies, but not only coding my life is about
+                  programming: I love to play soccer and pass a good time with
+                  my friends, watch movies and series, and spend time with my
+                  family (my dogs are part of my family too 😄), go for a walk
+                  to the park with them is something I really enjoy. Spend time
+                  in the nature, drink Mate and having a good time is all I need
+                  to be happy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-1 p-3 lg:pr-10 lg:bg-grey-light rounded-xl md:order-1">
             <Image
               src="/assets/images/me2.png"
               alt="Christian Miguez"
               width={200}
               height={200}
               quality={100}
-              className="rounded-full mx-auto mb-4 mt-6 mr-[10px]"
+              className="rounded-full mx-auto mb-4 mt-6 lg:mr-[10px] hidden lg:block"
             />
 
             <div className={`${styles["resume_section"]} mt-10`}>
@@ -169,156 +321,6 @@ export default async function About() {
                     style={{ width: "75%" }}
                   ></div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-2">
-            <div className="resume_heading h-[218px] flex flex-col justify-center">
-              <h2 className="h1 text-blue-middle font-extrabold tracking-tighter">
-                Christian Miguez
-              </h2>
-              <span className="text-blue-dark text-xl font-bold">
-                Web Developer
-              </span>
-            </div>
-            <div className={`${styles["resume_section"]} mt-10`}>
-              <div className="resume_title flex gap-4 items-center mb-4">
-                <Image
-                  src="/assets/images/icons/profile.svg"
-                  width={48}
-                  height={48}
-                  className="p-1"
-                  alt="Profile"
-                />
-                <h3 className="h4 text-blue-middle">About me</h3>
-              </div>
-
-              <div className="resume_content pl-16 mb-10">
-                <p className={`h5 font-bold mb-4 ${styles.dot}`}>
-                  Hi there! 🙂
-                </p>
-                <p>
-                  I&apos;m a {new Date().getFullYear() - 1991} years old guy
-                  from Uruguay who always loved web design and programming. I
-                  started my career as a web developer in 2012 and since then
-                  I&apos;ve been working in various companies with different
-                  technologies like HTML, CSS, JavaScript, TypeScript, PHP,
-                  WordPress, React, NextJS, NodeJS, and others. I&apos;m a
-                  self-taught person who loves to learn new things and I&apos;m
-                  always looking for new challenges. Nothing makes me happier
-                  than help people to achieve their goals, and be as
-                  professional as possible.
-                </p>
-              </div>
-            </div>
-
-            <div className={`${styles["resume_section"]} mt-20`}>
-              <div className="resume_title flex gap-4 items-center mb-4">
-                <Image
-                  src="/assets/images/icons/experience.svg"
-                  width={48}
-                  height={48}
-                  className="p-1"
-                  alt="Experience"
-                />
-                <h3 className="h4 text-blue-middle">Experience</h3>
-              </div>
-
-              <div className="resume_content pl-16 mb-10">
-                <span className="date text-gray-400">2018 - 2023</span>
-                <h3 className={`h5 ${styles.dot}`}>
-                  Senior WordPress Developer
-                </h3>
-                <p className="small mb-4">at OnPoint Global</p>
-                <p className="mb-4">
-                  OnPoint Global is a high growth data driven internet company
-                  that retains a large editorial and publishing staff to develop
-                  original content across its portfolio of vertical and geo
-                  focused brands.
-                </p>
-                <p>
-                  My work there was work along a big team of developers and
-                  designers to create and maintain WordPress websites for the
-                  company and its clients. In the last time I was working with
-                  React and NextJS to create new websites and improve the UX of
-                  the existing ones.
-                </p>
-              </div>
-
-              <div className="resume_content pl-16 mb-10">
-                <span className="date text-gray-400">2014 - 2018</span>
-                <h3 className={`h5 ${styles.dot}`}>WordPress Developer</h3>
-                <p className="small mb-4">at Tenfield.com</p>
-                <p className="mb-4">
-                  Tenfield is a broadcasting corporation which holds the
-                  commercial rights to broadcast the Uruguayan football and
-                  basketball.
-                </p>
-                <p>
-                  My work there was create and maintain WordPress websites for
-                  the company, creating custom rank tables for the football and
-                  basketball leagues, and creating custom plugins to manage the
-                  content of the websites.
-                </p>
-              </div>
-
-              <div className="resume_content pl-16 mb-10">
-                <span className="date text-gray-400">2013 - 2014</span>
-                <h3 className={`h5 ${styles.dot}`}>Web developer</h3>
-                <p className="small mb-4">at Wintrillions.com</p>
-                <p className="mb-4">
-                  Established in 2005, WinTrillions is an amazing online lottery
-                  provider offering lotteries, syndicates, millionaire raffles
-                  and scratch cards. It provides players with the opportunity to
-                  participate in draws of the most popular lotteries around the
-                  world.
-                </p>
-                <p>
-                  In Wintrillions the main tasks I had were: Design and Layout
-                  newsletters and their Casino website
-                </p>
-              </div>
-
-              <div className="resume_content pl-16 mb-10">
-                <span className="date text-gray-400">2012 - 2013</span>
-                <h3 className={`h5 ${styles.dot}`}>Web Developer</h3>
-                <p className="small mb-4">at Meeting</p>
-                <p className="mb-4">
-                  Meeting is a creative digital agency based in Montevideo,
-                  which provides services in the areas of web design, web
-                  development, mobile applications, and digital marketing.
-                </p>
-                <p>
-                  In Meeting I was working as a web developer, creating websites
-                  for the company and its clients using just HTML, CSS, JS, PHP
-                  and WordPress.
-                </p>
-              </div>
-            </div>
-
-            <div className={`${styles["resume_section"]} mt-20`}>
-              <div className="resume_title flex gap-4 items-center mb-4">
-                <Image
-                  src="/assets/images/icons/hobbies.svg"
-                  width={48}
-                  height={48}
-                  className="p-1"
-                  alt="Hobbies"
-                />
-                <h3 className="h4 text-blue-middle">Hobbies</h3>
-              </div>
-
-              <div className="resume_content pl-16 mb-10">
-                <p>
-                  Learning and playing with new technologies is one of my
-                  favorite hobbies, but not only coding my life is about
-                  programming: I love to play soccer and pass a good time with
-                  my friends, watch movies and series, and spend time with my
-                  family (my dogs are part of my family too 😄), go for a walk
-                  to the park with them is something I really enjoy. Spend time
-                  in the nature, drink Mate and having a good time is all I need
-                  to be happy.
-                </p>
               </div>
             </div>
           </div>

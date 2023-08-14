@@ -39,7 +39,7 @@ const Modal = ({ handleClose, modalContent }: any) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="modal orange-gradient z-50 h-full !mt-28"
+        className="modal bg-blue-dark-gradient z-50 h-full md:!mt-28"
         variants={dropIn}
         initial="hidden"
         animate="visible"
@@ -64,50 +64,50 @@ const Modal = ({ handleClose, modalContent }: any) => {
                   switch (technology) {
                     case "WordPress":
                       return (
-                        <div className="p-3 bg-white text-[#00749C] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#00749C] rounded-full">
                           <FaWordpress />
                         </div>
                       );
                     case "React":
                       return (
-                        <div className="p-3 bg-white text-[#149eca] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#149eca] rounded-full">
                           <FaReact />
                         </div>
                       );
 
                     case "PHP":
                       return (
-                        <div className="p-3 bg-white text-[#4F69C6] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#4F69C6] rounded-full">
                           <FaPhp />
                         </div>
                       );
                     case "JavaScript":
                       return (
-                        <div className="p-3 bg-white text-[#F0DB4F] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#f3bb42] rounded-full">
                           <FaJs />
                         </div>
                       );
                     case "HTML":
                       return (
-                        <div className="p-3 bg-white text-[#e34c26] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#e34c26] rounded-full">
                           <FaHtml5 />
                         </div>
                       );
                     case "CSS":
                       return (
-                        <div className="p-3 bg-white text-[#264de4] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#337ed4] rounded-full">
                           <FaCss3 />
                         </div>
                       );
                     case "Bootstrap":
                       return (
-                        <div className="p-3 bg-white text-[#149eca] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#563d7c] rounded-full">
                           <FaBootstrap />
                         </div>
                       );
                     case "WooCommerce":
                       return (
-                        <div className="p-3 bg-white text-[#149eca] rounded-full">
+                        <div className="p-2 md:p-3 bg-white text-[#149eca] rounded-full">
                           <FaShoppingCart />
                         </div>
                       );
@@ -124,7 +124,7 @@ const Modal = ({ handleClose, modalContent }: any) => {
                 External link <FaExternalLinkAlt />
               </a>
               <button
-                className="p-3 px-6 bg-gray-700 ml-auto text-white rounded-lg absolute bottom-4 right-4 font-bold"
+                className="w-full md:w-auto md:inline-block mt-12 p-3 px-6 bg-red-600 text-white  md:ml-auto  rounded-lg md:absolute md:bottom-4 md:right-4 font-bold"
                 onClick={handleClose}
               >
                 Close

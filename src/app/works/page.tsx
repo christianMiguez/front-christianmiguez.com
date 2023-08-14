@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 
-import styles from "./works.module.scss";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Modal from "@/components/features/Modal/Modal";
@@ -13,14 +12,19 @@ export default function Works() {
 
   const close = () => {
     setModalOpen(false);
-    document.getElementsByTagName("body")[0].style.overflow = "auto";
+    if (window.innerWidth > 768) {
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
+    }
   };
   const open = (e: any) => {
     setModalOpen(true);
     document
       .getElementsByTagName("body")[0]
       .scrollIntoView({ behavior: "instant" });
-    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+    // if viewport is smaller than 768px:
+    if (window.innerWidth > 768) {
+      document.getElementsByTagName("body")[0].style.overflow = "hidden";
+    }
     setModalContent(WORKS[e.target.dataset.id]);
   };
 
@@ -41,9 +45,13 @@ export default function Works() {
           )}
         </AnimatePresence>
 
-        <main className="py-28">
+        <main className="py-32">
           <div className="hero-post container mx-auto px-4">
-            <h1 className="h2 mb-8 text-center">Works</h1>
+            <h1 className="h2 text-center">Works</h1>
+            <p className="text-center mb-16 text-slate-300 text-sm">
+              Check out some of my latest projects, I&apos;ve worked with a
+              variety of clients from all over the world.
+            </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="grid gap-4">

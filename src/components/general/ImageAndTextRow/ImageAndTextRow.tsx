@@ -62,12 +62,19 @@ export const ImageAndTextRow = ({
               </h3>
             )}
             <p
-              className={`text-center mb-4 ${
+              className={`text-center mb-4 pb-4 ${
                 inverse ? "lg:text-left" : "lg:text-right"
               }`}
               dangerouslySetInnerHTML={{ __html: text }}
             />
-            {href && <Button variant="stone" text="Learn more" href={href} />}
+            {href && (
+              <Button
+                variant="stone"
+                text="Learn more"
+                href={href}
+                className="mx-auto !block lg:!inline-block text-center max-w-[150px]"
+              />
+            )}
           </div>
         </div>
       </div>
