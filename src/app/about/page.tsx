@@ -226,7 +226,10 @@ export default function About() {
                 <span className="bg-[#f06529] text-white font-bold px-1 mb-1 inline-block">
                   HTML
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "95%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "95%" }}
@@ -237,7 +240,10 @@ export default function About() {
                 <span className="bg-[#348df3] text-white font-bold px-1 mb-1 inline-block">
                   CSS
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "95%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "95%" }}
@@ -248,7 +254,10 @@ export default function About() {
                 <span className="bg-[#F0DB4F] text-[#323330] font-bold px-1 mb-1 inline-block">
                   JavaScript
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "80%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "80%" }}
@@ -259,7 +268,10 @@ export default function About() {
                 <span className="bg-[#777BB3] text-white font-bold px-1 mb-1 inline-block">
                   PHP
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "80%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "80%" }}
@@ -270,7 +282,10 @@ export default function About() {
                 <span className="bg-[#00749c] text-white font-bold px-1 mb-1 inline-block">
                   WordPress
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "90%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "90%" }}
@@ -281,7 +296,10 @@ export default function About() {
                 <span className="bg-[#53b4ec] text-white font-bold px-1 mb-1 inline-block">
                   React
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "75%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "75%" }}
@@ -293,7 +311,10 @@ export default function About() {
                 <span className="bg-[#323330] text-white font-bold px-1 mb-1 inline-block">
                   Next.js
                 </span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "75%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "75%" }}
@@ -316,7 +337,10 @@ export default function About() {
 
               <div className="resume_content pl-16 mb-10">
                 <span className="date">Spanish</span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "100%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "100%" }}
@@ -326,7 +350,10 @@ export default function About() {
 
               <div className="resume_content pl-16 mb-10">
                 <span className="date">English</span>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
+                <div
+                  className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-orange-500"
+                  style={{ width: "75%" }}
+                >
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "75%" }}
