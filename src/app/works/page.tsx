@@ -45,9 +45,9 @@ export default function Works() {
           )}
         </AnimatePresence>
 
-        <main className="py-32 md:py-32">
+        <main className="py-32 md:py-32 transition-opacity animate-fadeInUp duration-700 opacity-100">
           <div className="hero-post container mx-auto px-4">
-            <h1 className="h2 text-center">Works</h1>
+            <h1 className="h2 text-center mb-2">Works</h1>
             <p className="text-center mb-16 text-slate-300 text-sm">
               Check out some of my latest projects, I&apos;ve worked with a
               variety of clients from all over the world.

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-export default function About() {
+export default async function About() {
   return (
-    <main className="py-6 md:py-6">
+    <main className="py-32 md:py-32 transition-opacity animate-fadeInUp duration-700 opacity-100">
       <div className="md-container">
         <div className={`lg:grid lg:grid-cols-3 gap-8 px-4 lg:px-0`}>
           <div className="lg:col-span-2 md:order-2">
@@ -11,7 +11,7 @@ export default function About() {
                 <h2 className="h2 md:h1 text-blue-middle font-extrabold tracking-tighter">
                   Christian Miguez
                 </h2>
-                {/* <a href="/resume.pdf" target="_blank">
+                <a href="/resume.pdf" target="_blank">
                   <Image
                     src="/assets/images/icons/pdf.svg"
                     width={48}
@@ -19,16 +19,10 @@ export default function About() {
                     className="p-1 ml-4"
                     alt="Download as PDF"
                   />
-                </a> */}
+                </a>
               </div>
-              <span className="text-blue-dark text-xl pt-2">
+              <span className="text-blue-dark text-xl font-bold">
                 Web Developer
-                <br />
-                <br />
-                Contact me at{" "}
-                <strong className="text-orange-600 text-base">
-                  christianmiguez.com - kisquian@gmail.com
-                </strong>
               </span>
             </div>
             <div className={`${styles["resume_section"]} mt-10`}>
@@ -181,7 +175,7 @@ export default function About() {
               width={200}
               height={200}
               quality={100}
-              className="rounded-full mx-auto mb-4 mt-6 lg:mr-[10px] hidden lg:block"
+              className="rounded-full mx-auto mb-4 mt-6 md:mt-0 lg:mr-[10px] hidden lg:block"
             />
 
             <div className={`${styles["resume_section"]} mt-10`}>
@@ -232,10 +226,7 @@ export default function About() {
                 <span className="bg-[#f06529] text-white font-bold px-1 mb-1 inline-block">
                   HTML
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "95%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "95%" }}
@@ -246,10 +237,7 @@ export default function About() {
                 <span className="bg-[#348df3] text-white font-bold px-1 mb-1 inline-block">
                   CSS
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "95%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "95%" }}
@@ -260,10 +248,7 @@ export default function About() {
                 <span className="bg-[#F0DB4F] text-[#323330] font-bold px-1 mb-1 inline-block">
                   JavaScript
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "80%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "80%" }}
@@ -274,10 +259,7 @@ export default function About() {
                 <span className="bg-[#777BB3] text-white font-bold px-1 mb-1 inline-block">
                   PHP
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "80%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "80%" }}
@@ -288,10 +270,7 @@ export default function About() {
                 <span className="bg-[#00749c] text-white font-bold px-1 mb-1 inline-block">
                   WordPress
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "90%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "90%" }}
@@ -302,10 +281,7 @@ export default function About() {
                 <span className="bg-[#53b4ec] text-white font-bold px-1 mb-1 inline-block">
                   React
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "75%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "75%" }}
@@ -317,10 +293,7 @@ export default function About() {
                 <span className="bg-[#323330] text-white font-bold px-1 mb-1 inline-block">
                   Next.js
                 </span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "75%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "75%" }}
@@ -343,10 +316,7 @@ export default function About() {
 
               <div className="resume_content pl-16 mb-10">
                 <span className="date">Spanish</span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "100%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "100%" }}
@@ -356,10 +326,7 @@ export default function About() {
 
               <div className="resume_content pl-16 mb-10">
                 <span className="date">English</span>
-                <div
-                  className="w-full bg-orange-500 rounded-full h-1.5 mb-4 dark:bg-orange-500"
-                  style={{ width: "75%" }}
-                >
+                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
                   <div
                     className="h-1.5 rounded-full dark:bg-orange-500"
                     style={{ width: "75%" }}
