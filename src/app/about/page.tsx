@@ -160,13 +160,12 @@ export default async function About() {
               <div className="resume_content pl-16 mb-10">
                 <p>
                   Learning and playing with new technologies is one of my
-                  favorite hobbies, but not only coding my life is about
-                  programming: I love to play soccer and pass a good time with
-                  my friends, watch movies and series, and spend time with my
-                  family (my dogs are part of my family too 😄), go for a walk
-                  to the park with them is something I really enjoy. Spend time
-                  in the nature, drink Mate and having a good time is all I need
-                  to be happy.
+                  favorite hobbies, but not only coding is my life about: I love
+                  to play soccer and pass a good time with my friends, watch
+                  movies and series, and spend time with my family (my dogs are
+                  part of my family too 😄), go for a walk to the park with them
+                  is something I really enjoy. Spend time in the nature, drink
+                  Mate and having a good time is all I need to be happy.
                 </p>
               </div>
             </div>
