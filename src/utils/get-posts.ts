@@ -8,7 +8,7 @@ export async function getPosts(limit: number) {
   const items = res.docs.map((doc: any) => ({
     image: doc.hero.media
       ? getImage(doc.hero.media.url)
-      : `${process.env.NEXT_PUBLIC_SERVER_URL}/assets/images/images1web.webp`,
+      : `/assets/images/images1web.webp`,
     title: doc.title,
     text: doc.hero.richText[0].children[0].text,
     href: doc.slug,
