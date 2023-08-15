@@ -2,7 +2,10 @@ import { getImage } from "./get-payload-image";
 
 export async function getPosts(limit: number) {
   const res = await fetch(
-    `https://admin-christianmiguez-com.onrender.com/api/posts?limit=${limit}`
+    `https://admin-christianmiguez-com.onrender.com/api/posts?limit=${limit}`,
+    {
+      cache: "no-cache",
+    }
   ).then((res) => res.json());
 
   const items = res.docs.map((doc: any) => ({
