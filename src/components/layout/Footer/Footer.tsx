@@ -18,7 +18,7 @@ export const Footer = () => {
         <span className="py-6">Full Stack Web Developer</span>
         <ul className="flex">
           <li>
-            <Link href="/home" className="p-2 mb-1 block">
+            <Link href="https://christianmiguez.com" className="p-2 mb-1 block">
               Home
             </Link>
           </li>
