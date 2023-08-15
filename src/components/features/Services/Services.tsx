@@ -20,7 +20,7 @@ export const Services = () => {
   ];
 
   return (
-    <div className="my-12">
+    <div className="my-12 px-2">
       <h3 className="text-center text-blue-middle font-normal">
         Unlock your imagination
       </h3>
