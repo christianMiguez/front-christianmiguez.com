@@ -16,7 +16,7 @@ export default async function Blog() {
       <GoogleAnalytics GA_TRACKING_ID={"G-C4D9EFW4VL"} />
 
       <h1 className="h2 text-center mb-2">Blog</h1>
-      <p className="text-center mb-10 text-slate-900 text-sm">
+      <p className="text-center mb-10 text-slate-900 text-sm px-3">
         I just write things and stuff to share my knowledge and help people.
       </p>
       {items.map((item: ImageAndTextRowProps) => (
