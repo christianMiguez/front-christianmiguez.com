@@ -23,9 +23,7 @@ const getPost = async (slug: string) => {
     const post = await fetch(
       `${process.env.PAYLOAD_SERVER_URL}/api/posts?where[slug][equals]=${slug}`,
       {
-        next: {
-          revalidate: 60 * 60 * 30 * 6,
-        },
+        cache: "no-cache",
       }
     ).then((resp) => resp.json());
 
