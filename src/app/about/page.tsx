@@ -1,6 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import GoogleAnalytics from "@/components/features/GoogleAnalytics";
+
+export const metadata = {
+  title: "Christian Miguez:: About",
+  description: "About Christian Miguez: Web Developer",
+};
+
 export default async function About() {
   return (
     <main className="py-32 md:py-32 transition-opacity animate-fadeInUp duration-700 opacity-100">
