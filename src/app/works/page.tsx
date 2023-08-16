@@ -7,11 +7,6 @@ import Modal from "@/components/features/Modal/Modal";
 import { WORKS } from "@/utils/data";
 import GoogleAnalytics from "@/components/features/GoogleAnalytics";
 
-export const metadata = {
-  title: "Christian Miguez:: Works",
-  description: "Some things I've worked on.",
-};
-
 export default function Works() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(WORKS[0]);
