@@ -13,6 +13,8 @@ export async function generateStaticParams() {
     slug: post.href,
   }));
 
+  console.log(allPosts);
+
   return allPosts.map(({ slug }: any) => ({
     slug,
   }));
@@ -23,7 +25,8 @@ const getPost = async (slug: string) => {
     const post = await fetch(
       `${process.env.PAYLOAD_SERVER_URL}/api/posts?where[slug][equals]=${slug}`,
       {
-        cache: "no-cache",
+        // cache: "no-cache",
+        cache: "force-cache",
       }
     ).then((resp) => resp.json());
 
