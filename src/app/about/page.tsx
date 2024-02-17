@@ -200,8 +200,10 @@ export default async function About() {
 
               <div className="resume_content pl-16 mb-10">
                 <span className="date text-gray-400">Current</span>
-                <h3 className={`h5 ${styles.dot}`}>Computer Science</h3>
-                <p className="small mb-4">at HarvardX CS50x</p>
+                <h3 className={`h5 ${styles.dot}`}>
+                  Bachelor's degree in a systems
+                </h3>
+                <p className="small mb-4">at ORT University</p>
               </div>
 
               <div className="resume_content pl-16 mb-10">
