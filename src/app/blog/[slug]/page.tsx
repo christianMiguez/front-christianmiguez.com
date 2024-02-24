@@ -57,7 +57,7 @@ export default async function Post({ params }: any) {
             </h1>
           </div>
           <div className="layout-post">
-            {post.layout.map((column) => {
+            {post.layout.map((column: any) => {
               switch (column.blockType) {
                 case "mediaBlock":
                   return (
