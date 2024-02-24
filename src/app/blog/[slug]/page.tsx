@@ -32,7 +32,7 @@ const getPost = async (slug: string) => {
 };
 
 export default async function Post({ params }: any) {
-  const post: Post = await getPost(params.slug);
+  const post: any = await getPost(params.slug);
 
   const title = post.title;
   const heroText = post.hero.richText[0].children[0].text;
