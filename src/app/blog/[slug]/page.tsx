@@ -5,6 +5,7 @@ import { Post } from "@/interfaces/post.interface";
 import Content from "@/components/layout/Post/Content";
 import CTA from "@/components/layout/Post/CTA";
 import GoogleAnalytics from "@/components/features/GoogleAnalytics";
+import data from "@/api/posts.json";
 
 export async function generateStaticParams() {
   const posts = await getPosts(100);
@@ -13,7 +14,6 @@ export async function generateStaticParams() {
     slug: post.href,
   }));
 
-  console.log(allPosts);
 
   return allPosts.map(({ slug }: any) => ({
     slug,
@@ -22,17 +22,9 @@ export async function generateStaticParams() {
 
 const getPost = async (slug: string) => {
   try {
-    const post = await fetch(
-      `${process.env.PAYLOAD_SERVER_URL}/api/posts?where[slug][equals]=${slug}`,
-      {
-        // cache: "no-cache",
-        cache: "force-cache",
-      }
-    ).then((resp) => resp.json());
+    const post = data.docs.find((doc: any) => doc.slug === slug);
 
-    console.log(post.docs[0]);
-
-    return post.docs[0];
+    return post
   } catch (error) {
     // notFound();
     throw new Error("error");

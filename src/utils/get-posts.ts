@@ -1,14 +1,9 @@
 import { getImage } from "./get-payload-image";
+import data from "./../api/posts.json";
 
 export async function getPosts(limit: number) {
-  const res = await fetch(
-    `https://admin-christianmiguez-com.onrender.com/api/posts?limit=${limit}`,
-    {
-      cache: "no-cache",
-    }
-  ).then((res) => res.json());
 
-  const items = res.docs.map((doc: any) => ({
+  const items = data.docs.map((doc: any) => ({
     image: doc.hero.media
       ? getImage(doc.hero.media.url)
       : `/assets/images/images1web.webp`,
