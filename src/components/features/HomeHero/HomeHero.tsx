@@ -51,7 +51,7 @@ export const HomeHero = () => {
               Web Developer
             </h2>
 
-            <span className="thin-style">Let&apos;s do business together!</span>
+            <span className="thin-style">Let&apos;s work together!</span>
           </motion.div>
         </div>
       </div>
