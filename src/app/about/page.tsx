@@ -55,8 +55,7 @@ export default async function About() {
                   from Uruguay who always loved web design and programming. I
                   started my career as a web developer in 2012 and since then
                   I&apos;ve been working in various companies with different
-                  technologies like HTML, CSS, JavaScript, TypeScript, PHP,
-                  WordPress, React, NextJS, NodeJS, and others. I&apos;m a
+                  technologies like HTML, CSS, JavaScript/TypeScript, Docker, Git, PHP, and varied librarias/frameworks like React, NextJS, Nest, NodeJS, and others. I&apos;m a
                   self-taught person who loves to learn new things and I&apos;m
                   always looking for new challenges. Nothing makes me happier
                   than help people to achieve their goals, and be as
@@ -201,9 +200,9 @@ export default async function About() {
               <div className="resume_content pl-16 mb-10">
                 <span className="date text-gray-400">Current</span>
                 <h3 className={`h5 ${styles.dot}`}>
-                  Bachelor&apos;s degree in a systems
+                  Python for Web Development
                 </h3>
-                <p className="small mb-4">at ORT University</p>
+                <p className="small mb-4">at BIOS</p>
               </div>
 
               <div className="resume_content pl-16 mb-10">
