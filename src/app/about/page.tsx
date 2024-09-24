@@ -55,7 +55,7 @@ export default async function About() {
                   from Uruguay who always loved web design and programming. I
                   started my career as a web developer in 2012 and since then
                   I&apos;ve been working in various companies with different
-                  technologies like HTML, CSS, JavaScript/TypeScript, Docker, Git, PHP, and varied librarias/frameworks like React, NextJS, Nest, NodeJS, and others. I&apos;m a
+                  technologies like HTML, CSS, JavaScript/TypeScript, Docker, Git, PHP, and other libraries/frameworks like React, NextJS, Nest, NodeJS, and others. I&apos;m a
                   self-taught person who loves to learn new things and I&apos;m
                   always looking for new challenges. Nothing makes me happier
                   than help people to achieve their goals, and be as
